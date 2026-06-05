@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetto ERP | O Sistema de Gestão para Pequenos e Médios Negócios</title>
+    <meta name="description" content="Você não abriu sua empresa para ser escravo de planilhas. O Kinetto é o ERP universal para comércios, serviços e pequenas indústrias. Emita notas, receba Pix e controle o caixa.">
+    <meta name="keywords" content="ERP para pequenas empresas, sistema de gestão empresarial, emissor de nota fiscal, controle financeiro PME, software de gestão de fluxo de caixa, emissão de boleto automático, ERP genérico, sistema para comércio, sistema para prestador de serviço, Kinetto">
+    <meta name="author" content="Kinetto">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kinetto.com.br/">
+    <meta property="og:title" content="Kinetto ERP | O fim do caos no seu negócio">
+    <meta property="og:description" content="Jogue as planilhas fora. Gestão de vendas, emissão de notas fiscais e cobranças automáticas para empresas de qualquer segmento.">
+    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Kinetto ERP",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "description": "Sistema de gestão comercial e financeiro (ERP) flexível, desenhado para pequenas e médias empresas de qualquer segmento, incluindo comércio, serviços e pequenas indústrias.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      }
+    }
+    </script>
+ 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="premium-layout position-relative overflow-x-hidden">
+
+
+    <div class="bg-grid"></div>
+
+    <main class="min-vh-100 d-flex flex-column position-relative z-2">
+        <header class="py-4">
+            <div class="container d-flex justify-content-center justify-content-md-start">
+                <div class="logo-wrapper d-flex align-items-center gap-2">
+                    <div class="logo-mark">K</div>
+                    <span class="logo-text">Kinetto</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="flex-grow-1 d-flex align-items-center py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 text-center">
+                        
+                        
+                        <div class="premium-badge mb-4 animate__animated animate__fadeInDown">
+                            <span class="pulse-dot"></span>
+                            LISTA DE ESPERA EXCLUSIVA (VAGAS LIMITADAS)
+                        </div>
+
+                       
+                        <h1 class="premium-headline mb-4 animate__animated animate__fadeInUp">
+                            Você não abriu uma empresa para <br class="d-none d-md-block"> virar escravo de planilhas.
+                        </h1>
+                        
+                        
+                        <p class="premium-subheadline mb-5 mx-auto animate__animated animate__fadeInUp animate__delay-1s" style="max-width: 800px;">
+                            Sabemos como é. Você abre sua empresa com um sonho, independente do segmento. De repente, o crescimento traz o caos, planilhas perdidas, clientes esquecendo de pagar e a burocracia das Notas Fiscais tomando seu tempo. <strong>O Kinetto nasceu para resolver exatamente isso.</strong>
+                        </p>
+
+                       
+                        <p class="timer-label animate__animated animate__fadeInDown">Lançamento Oficial em:</p>
+                        <div class="timer-wrapper d-flex justify-content-center gap-2 gap-md-3 mb-5 animate__animated animate__zoomIn animate__delay-1s">
+                            <div class="timer-box"><span id="cd-days">00</span><small>Dias</small></div>
+                            <div class="timer-divider">:</div>
+                            <div class="timer-box"><span id="cd-hours">00</span><small>Horas</small></div>
+                            <div class="timer-divider">:</div>
+                            <div class="timer-box"><span id="cd-minutes">00</span><small>Min</small></div>
+                            <div class="timer-divider">:</div>
+                            <div class="timer-box"><span id="cd-seconds">00</span><small>Seg</small></div>
+                        </div>
+
+                       
+                        <div class="capture-area mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+                            <div id="success-box" class="success-message d-none">
+                                <i class="bi bi-check2-circle"></i>
+                                <h5>Seu lugar está garantido!</h5>
+                                <p>Você será um dos primeiros a ser avisado no dia do lançamento e receberá uma condição de fundador exclusiva.</p>
+                            </div>
+                            
+                            <form id="waitlist-form">
+                                <div class="premium-input-group">
+                                    <i class="bi bi-envelope input-icon"></i>
+                                    <input type="email" id="email-input" class="premium-input" placeholder="Qual o seu melhor e-mail corporativo?" required>
+                                    <button type="submit" id="submit-btn" class="premium-button px-4">
+                                        <span id="btn-text">Garantir Acesso Antecipado</span>
+                                        <span id="btn-spinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                    </button>
+                                </div>
+                            </form>
+                            <p id="form-footer-text" class="security-text mt-3">
+                                <i class="bi bi-shield-check"></i> Respeitamos sua caixa de entrada. Zero spam.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="py-5" style="background-color: #ffffff; position: relative; z-index: 2;">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="display-5 fw-black mb-4 tracking-tight" style="color: var(--text-main);">O que exatamente é o Kinetto?</h2>
+                        <p class="fs-5 text-muted mb-4">
+                            Em palavras simples: o Kinetto é um <strong>Sistema de Gestão Empresarial (ERP) flexível</strong> feito para pessoas normais, independente do tipo de negócio que você administra.
+                        </p>
+                        <p class="text-muted mb-4" style="line-height: 1.7;">
+                            A maioria dos sistemas do mercado são difíceis de usar ou segmentados demais. Quando você tem clientes aguardando ou fornecedores para pagar, você não tem tempo para clicar em 15 botões diferentes só para emitir uma Nota Fiscal.
+                        </p>
+                        <p class="fw-bold" style="color: var(--text-main); font-size: 1.1rem;">
+                            Nós pegamos os pilares de toda empresa cobrar clientes, conciliar o caixa, calcular o lucro e enviar relatórios contábeis e colocamos tudo no piloto automático em uma interface limpa.
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="bento-card" style="box-shadow: 0 20px 40px -5px rgba(0,0,0,0.05);">
+                            <h4 class="fw-bold mb-4" style="color: var(--text-main);">O Kinetto se adapta à sua operação:</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-4 d-flex align-items-start">
+                                    <i class="bi bi-shop fs-4 me-3" style="color: var(--accent);"></i> 
+                                    <div>
+                                        <strong style="color: var(--text-main);">Comércio e Varejo em Geral</strong><br>
+                                        <span class="text-muted small">Controle o que entra, o que sai e emita cupom ou nota fiscal com agilidade, independente do que você vende.</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4 d-flex align-items-start">
+                                    <i class="bi bi-person-workspace fs-4 me-3" style="color: var(--accent);"></i> 
+                                    <div>
+                                        <strong style="color: var(--text-main);">Prestadores de Serviços e Autônomos</strong><br>
+                                        <span class="text-muted small">Mande orçamentos profissionais, gere boletos recorrentes e pare de levar calote em serviços prestados.</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="bi bi-boxes fs-4 me-3" style="color: var(--accent);"></i> 
+                                    <div>
+                                        <strong style="color: var(--text-main);">Pequenas Indústrias e Distribuidores</strong><br>
+                                        <span class="text-muted small">Gestão financeira robusta, controle de precificação exato e emissão de notas fiscais sem complicação.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="py-5 position-relative z-2">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-black tracking-tight" style="color: var(--text-main);">A tecnologia jogando a seu favor</h2>
+                    <p class="text-muted fs-5">Tudo o que você precisa para fazer qualquer modelo de empresa operar de forma profissional.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-receipt-cutoff"></i></div>
+                            <h4>Nota Fiscal em 3 Cliques</h4>
+                            <p>Chega de sofrer no portal do governo. Seja NF-e para produtos ou NFS-e para serviços, o Kinetto calcula os impostos e transmite para a SEFAZ na hora.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-qr-code-scan"></i></div>
+                            <h4>Máquina de Recebimento</h4>
+                            <p>Gere Boletos e links de Pix. Quando o cliente paga, o Kinetto dá baixa sozinho. Esqueceu de pagar? O sistema cobra ele por você via e-mail.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-calculator-fill"></i></div>
+                            <h4>Calculadora de Preço Real</h4>
+                            <p>Você sabe se o que você vende realmente dá lucro? Nossa calculadora tira as taxas da maquininha e os impostos, mostrando a margem exata.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h4>Fluxo de Caixa Previsível</h4>
+                            <p>Esqueça as abas do Excel. Saiba quanto você tem hoje na conta, quanto tem a receber na próxima semana e quais contas vencem amanhã em gráficos simples.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-folder-check"></i></div>
+                            <h4>Integração Contábil Direta</h4>
+                            <p>A contabilidade pediu o fechamento? Exporte recibos, movimentações financeiras e XMLs em um arquivo único para o seu contador.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bento-card h-100">
+                            <div class="bento-icon"><i class="bi bi-phone-fill"></i></div>
+                            <h4>Gestão na Palma da Mão</h4>
+                            <p>Sistema 100% na nuvem. Acompanhe o fluxo financeiro, aprove orçamentos ou confira o fechamento de caixa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="py-5 position-relative z-2" style="background-color: #ffffff;">
+            <div class="container py-5 text-center" style="border-color: var(--border-light) !important; padding-top: 80px !important; padding-bottom: 80px !important;">
+                <h2 class="display-6 fw-black mb-3" style="color: var(--text-main);">Está na hora de profissionalizar a sua operação.</h2>
+                <p class="fs-5 text-muted mb-5">Não deixe o seu negócio estagnar por falta de organização. Junte-se a nós.</p>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="premium-button px-5 py-3" style="font-size: 1.1rem; margin: auto">
+                    Quero entrar na Lista VIP <i class="bi bi-arrow-up-circle ms-2"></i>
+                </button>
+            </div>
+        </section>
+
+        <footer class="py-4 position-relative z-2 bg-light">
+            <div class="container text-center">
+                <p class="footer-text mb-0">&copy; <span id="current-year"></span> Kinetto Sistemas. O motor das empresas inteligentes. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const launchDate = new Date("2026-08-05T08:00:00").getTime();
+
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelectorAll(".timer-box span").forEach(el => el.innerText = "00");
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("cd-days").innerText = String(days).padStart(2, '0');
+            document.getElementById("cd-hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("cd-minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("cd-seconds").innerText = String(seconds).padStart(2, '0');
+        }, 1000);
+
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            const emailInput = document.getElementById('email-input');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnSpinner = document.getElementById('btn-spinner');
+            const successBox = document.getElementById('success-box');
+            const formFooter = document.getElementById('form-footer-text');
+            const email = emailInput.value;
+
+            emailInput.disabled = true;
+            submitBtn.disabled = true;
+            btnText.classList.add('d-none');
+            btnSpinner.classList.remove('d-none');
+
+            fetch("https://formsubmit.co/ajax/prsousa730@gmail.com", {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    _subject: "lead - kinetto",
+                    email_cadastrado: email,
+                    origem: "Landing Page Waitlist SEO + Premium",
+                    _template: "table"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                this.classList.add('d-none'); 
+                formFooter.classList.add('d-none'); 
+                successBox.classList.remove('d-none'); 
+                successBox.classList.add('animate__animated', 'animate__zoomIn');
+            })
+            .catch(error => {
+                emailInput.disabled = false;
+                submitBtn.disabled = false;
+                btnText.classList.remove('d-none');
+                btnSpinner.classList.add('d-none');
+                alert("Ocorreu um erro na conexão. Por favor, tente novamente.");
+            });
+        });
+    </script>
+</body>
+</html>
